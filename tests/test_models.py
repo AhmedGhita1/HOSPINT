@@ -3,7 +3,7 @@ from __future__ import annotations
 import pytest
 from pydantic import ValidationError
 
-from medint_neurosymbolic.models import HorusScene, SceneInstance
+from hospint.models import HorusScene, SceneInstance
 
 
 def test_instance_identifier_must_be_uri_safe() -> None:

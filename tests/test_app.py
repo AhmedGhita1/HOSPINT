@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import app
-from medint_neurosymbolic.qwen import get_qwen
+from hospint.qwen import get_qwen
 
 
 def test_app_build_is_lazy() -> None:

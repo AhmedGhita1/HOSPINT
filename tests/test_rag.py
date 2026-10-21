@@ -4,10 +4,10 @@ import asyncio
 
 import pytest
 
-from medint_neurosymbolic import rag as rag_module
-from medint_neurosymbolic.models import HorusScene
-from medint_neurosymbolic.ontology import OntologyVocabulary
-from medint_neurosymbolic.rag import SceneRAG, scene_to_lightrag
+from hospint import rag as rag_module
+from hospint.models import HorusScene
+from hospint.ontology import OntologyVocabulary
+from hospint.rag import SceneRAG, scene_to_lightrag
 
 
 def test_validated_scene_becomes_custom_kg(

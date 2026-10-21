@@ -6,7 +6,7 @@ import importlib.util
 import threading
 from typing import Any
 
-from medint_neurosymbolic.config import QWEN_MODEL_ID
+from hospint.config import QWEN_MODEL_ID
 
 
 class LocalModelUnavailable(RuntimeError):

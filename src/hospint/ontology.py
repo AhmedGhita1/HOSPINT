@@ -10,7 +10,7 @@ from rdflib import BNode, Graph, Literal, URIRef
 from rdflib.collection import Collection
 from rdflib.namespace import OWL, RDF, RDFS
 
-from medint_neurosymbolic.models import HorusScene
+from hospint.models import HorusScene
 
 
 @dataclass(frozen=True)

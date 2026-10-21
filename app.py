@@ -10,7 +10,7 @@ from typing import Any
 
 import gradio as gr
 
-from medint_neurosymbolic.config import (
+from hospint.config import (
     CLIPS_DIR,
     FIXTURE_DIR,
     GRADIO_SERVER_NAME,
@@ -19,12 +19,12 @@ from medint_neurosymbolic.config import (
     QUERY_DIR,
     SHAPES_PATH,
 )
-from medint_neurosymbolic.extraction import extract_scene
-from medint_neurosymbolic.models import HorusScene
-from medint_neurosymbolic.ontology import OntologyVocabulary, load_ontology
-from medint_neurosymbolic.perception import describe_video
-from medint_neurosymbolic.rag import SceneRAG
-from medint_neurosymbolic.semantic import (
+from hospint.extraction import extract_scene
+from hospint.models import HorusScene
+from hospint.ontology import OntologyVocabulary, load_ontology
+from hospint.perception import describe_video
+from hospint.rag import SceneRAG
+from hospint.semantic import (
     build_scene_graph,
     build_visualization_html,
     execute_select,
@@ -216,10 +216,10 @@ async def answer_question(
 def build_app() -> gr.Blocks:
     """Build the interface without loading models or launching a server."""
 
-    with gr.Blocks(title="medint-neurosymbolic") as demo:
+    with gr.Blocks(title="hospint") as demo:
         scene_state = gr.State(value=None)
 
-        gr.Markdown("# medint-neurosymbolic")
+        gr.Markdown("# hospint")
 
         with gr.Row():
             video = gr.Video(

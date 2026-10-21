@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from medint_neurosymbolic.models import HorusScene, SceneInstance, SceneRelation
-from medint_neurosymbolic.ontology import OntologyVocabulary, validate_scene
+from hospint.models import HorusScene, SceneInstance, SceneRelation
+from hospint.ontology import OntologyVocabulary, validate_scene
 
 EXPECTED_CLASSES = {
     "Action",
